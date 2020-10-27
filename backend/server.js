@@ -3,10 +3,14 @@ import dotenv from 'dotenv';
 import colors from 'colors';
 import connectDB from './config/db.js';
 import products from './data/tests';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js'
+
 
 import testRoutes from './routes/testRoutes.js';
 
 dotenv.config()
+
+connectDB()
 
 const app = express 
 
