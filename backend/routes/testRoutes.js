@@ -11,13 +11,13 @@ import {
 } from '../controllers/productController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
-router.route('/').get(getProducts).post(protect, admin, createProduct)
-router.route('/:id/reviews').post(protect, createProductReview)
-router.get('/top', getTopProducts)
+router.route('/').get(getProducts).post(protect, admin, createTest)
+router.route('/:id/reviews').post(protect, createTestReview)
+router.get('/top', getTopTests)
 router
   .route('/:id')
-  .get(getProductById)
-  .delete(protect, admin, deleteProduct)
-  .put(protect, admin, updateProduct)
+  .get(getTestById)
+  .delete(protect, admin, deleteTest)
+  .put(protect, admin, updateTest)
 
 export default router
