@@ -15,18 +15,18 @@ connectDB()
 const importData = async () => {
   try {
     await Order.deleteMany()
-    await Product.deleteMany()
+    await Test.deleteMany()
     await User.deleteMany()
 
     const createdUsers = await User.insertMany(users)
 
     const adminUser = createdUsers[0]._id
 
-    const sampleProducts = products.map((product) => {
-      return { ...product, user: adminUser }
+    const sampleTests = products.map((test) => {
+      return { ...test, user: adminUser }
     })
 
-    await Product.insertMany(sampleProducts)
+    await Test.insertMany(sampleTests)
 
     console.log('Data Imported!'.green.inverse)
     process.exit()
@@ -39,7 +39,7 @@ const importData = async () => {
 const destroyData = async () => {
   try {
     await Order.deleteMany()
-    await Product.deleteMany()
+    await Test.deleteMany()
     await User.deleteMany()
 
     console.log('Data Destroyed!'.red.inverse)
