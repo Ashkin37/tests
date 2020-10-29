@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const TopHeader = () => {
+const Header = () => {
 	return (
-		<topheader>
+		<header>
 			<Navbar bg="dark" variant='dark' expand='lg' collapseOnSelect>
 			<Container>
 			 <Navbar.Brand href='/'> tests </Navbar.Brand>
@@ -22,4 +22,4 @@ const TopHeader = () => {
 		)
 }
 
-export default TopHeader
+export default Header
