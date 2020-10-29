@@ -2,9 +2,9 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import colors from 'colors'
 import users from './data/users.js'
-import tests from './data/tests.js'
+import products from './data/products.js'
 import User from './models/userModel.js'
-import Test from './models/test.js'
+import Product from './models/productModel.js'
 import Order from './models/orderModel.js'
 import connectDB from './config/db.js'
 
@@ -15,18 +15,18 @@ connectDB()
 const importData = async () => {
   try {
     await Order.deleteMany()
-    await Test.deleteMany()
+    await Product.deleteMany()
     await User.deleteMany()
 
     const createdUsers = await User.insertMany(users)
 
     const adminUser = createdUsers[0]._id
 
-    const sampleTests = products.map((test) => {
-      return { ...test, user: adminUser }
+    const sampleProducts = products.map((product) => {
+      return { ...product, user: adminUser }
     })
 
-    await Test.insertMany(sampleTests)
+    await Product.insertMany(sampleProducts)
 
     console.log('Data Imported!'.green.inverse)
     process.exit()
@@ -39,7 +39,7 @@ const importData = async () => {
 const destroyData = async () => {
   try {
     await Order.deleteMany()
-    await Test.deleteMany()
+    await Product.deleteMany()
     await User.deleteMany()
 
     console.log('Data Destroyed!'.red.inverse)

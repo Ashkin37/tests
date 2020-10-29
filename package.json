@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "lab tests",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-   "start": "node backend/server",
+    "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -12,24 +13,16 @@
     "data:destroy": "node backend/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ashkin37/tests.git"
-  },
-  "author": "roy kasi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ashkin37/tests/issues"
-  },
-  "homepage": "https://github.com/Ashkin37/tests#readme",
+  "author": "",
+  "license": "",
   "dependencies": {
-    "mongoose": "^5.10.11",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.6",
     "morgan": "^1.10.0",
     "multer": "^1.4.2"
   },
