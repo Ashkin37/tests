@@ -81,7 +81,7 @@ const products = [
    {
     name: 'Basic HIV 1 and 2 with confirmation',
     image: '/images/hiv.jpg',
-    description: 'this blood test screens for HIV and STD that leads to AIDS if not treated',
+    description: 'this blood test screens for HIV and STD that leads to AIDS if not treated. The virus weakens your immune system by destroying important cells that fight disease and infection . If you are sexually active , it is important to know your HIV status so you dont infect others. There is no cure for HIV. but can be controlled with treatment. You might consider testing if you are 65 years of age or younger , have been exposed or are at risk of exposure or you want to get screened to know your status. Annual testing is recommended if you are: a man who has sex with men , have had more than one sex partner since your last test, have had sex with an HIV positive person , use/have used needles for drug injection , have exchanged sex for drugs or money, have had another STD since your last test, have hepatitis of TB, are pregnant. Most people with HIV do no initially have symptoms Those with symptoms might experience flu-like symptoms including feer, chills , rash , night sweats, muscle aaches, sore throat , fatigue, swollen lymph nodes or mouth ulcers lasting 1-2 weeks. If you previously had a negative test but are still experiencing symptoms you may want to consider taking the test againsince the average window period for tests to detect HIV is 3-12 weeks. This test does not require fasting',
     brand: 'modern',
     category: 'General Health',
     price: 290,
@@ -116,7 +116,7 @@ const products = [
     {
     name: 'Basic Sensitive Drug Screen Panel',
     image: '/images/drugscreen.jpg',
-    description: 'this blood test checks for the presence of certain illegal drugs and prescription medication',
+    description: 'this blood test checks for the presence of certain illegal drugs and prescription medication It evaluates your urine for substances used in the previous 24-72 hours , depending on the type of drug. This test is teh same method approved for mandated testing but is not officially accepted. Checks for amphetamines, benzodiazepines, marijuana metabolite, cocaine metabolite, opiates and oxycodone.',
     brand: 'modern',
     category: 'General Health',
     price: 290,
