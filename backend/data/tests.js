@@ -1,27 +1,5 @@
 const products = [
-  {
-    name: 'Basic Health Profile (Overall Health)',
-    image: '/images/general.jpg',
-    description:
-      'This essential screening is a great place to start if you want to gain insight into your overall health. It helps identify health conditions ranging from high cholesterol to kidney disease, so you can take informed action towards your health goals.This test does not require fasting.',   
-    brand: 'modern',
-    category: 'General Health',
-    price: 890,
-    countInStock: 37,
-    rating: 0,
-    numReviews: 0,
-  },
-  {
-    name: 'Blood Type (ABO, Rhesus Factor)',
-    image: '/images/4.jpg',
-    brand: 'modern',
-    description: 'This test determines your blood type. It identifies your blood group (A, B, AB, or O) and whether you are positive or negative for the Rh antigen, a protein that affects what type of blood you can receive or donate. For example, O negative is a universal donor, while AB positive is a universal recipient.This test does not require fasting.',
-    category: 'General Health',
-    price: 599,
-    countInStock: 37,
-    rating: 0,
-    numReviews: 0,
-  },
+  
   {
     name: 'Gonorrhea and Chlamydia Test',
     image: '/images/5.jpg',
@@ -51,6 +29,29 @@ const products = [
     brand: 'modern',
     category: 'STD',
     price: 290,
+    countInStock: 37,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Basic Health Profile (Overall Health)',
+    image: '/images/general.jpg',
+    description:
+      'This essential screening is a great place to start if you want to gain insight into your overall health. It helps identify health conditions ranging from high cholesterol to kidney disease, so you can take informed action towards your health goals.This test does not require fasting.',   
+    brand: 'modern',
+    category: 'General Health',
+    price: 890,
+    countInStock: 37,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'Blood Type (ABO, Rhesus Factor)',
+    image: '/images/4.jpg',
+    brand: 'modern',
+    description: 'This test determines your blood type. It identifies your blood group (A, B, AB, or O) and whether you are positive or negative for the Rh antigen, a protein that affects what type of blood you can receive or donate. For example, O negative is a universal donor, while AB positive is a universal recipient.This test does not require fasting.',
+    category: 'General Health',
+    price: 599,
     countInStock: 37,
     rating: 0,
     numReviews: 0,
